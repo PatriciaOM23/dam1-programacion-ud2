@@ -14,8 +14,6 @@ public class DatosUsuarios {
         System.out.print("Introduce tu correo electrónico: ");
         String email = sc.nextLine();
 
-       
-
         boolean emailValido = ProcesadorTexto.esEmailValido(email);
         boolean nombreValido = nombre.length() > 0 && nombre.length() <= 20;
         boolean edadValida = edad >= 0 && edad <= 120;
@@ -28,10 +26,9 @@ public class DatosUsuarios {
             System.out.print("Error.");
         }
 
-
-         /*
-
-         IDEA BASE
+        /*
+         * 
+         * IDEA BASE
          * if (edad <= 0 || edad >= 120 ) {
          * System.out.println("Error edad no válida");
          * }
