@@ -28,8 +28,8 @@ public class InstanciacionReferenciaYComparacion {
 
         // Tu código aquí ↓
             
-        Cancion c3 = new Cancion("Depilate", "Pati");
-        Cancion c4 = new Cancion("Suicidate","Gasu");
+        Cancion c3 = new Cancion("NI 1 RECUERDO CONTIGO", "L0rna");
+        Cancion c4 = new Cancion("Campanilla","Metrika");
         System.out.println("SEGUNDO EJERCICIO");
         System.out.println(c3 == c4);
 
@@ -97,21 +97,20 @@ public class InstanciacionReferenciaYComparacion {
 // RESPUESTAS DE REFLEXIÓN
 // ================================
 // Ejercicio 1: ¿Qué diferencia hay entre el constructor por defecto y el parametrizado?
-// Respuesta: ...
-
+// Respuesta: Por defecto es el que al hacer el package indicas cual es si no rellenan esa info (Indicas lo que viene por defecto), el parametrizado son los parámetros que indicas tú y no va por defecto en el package que utilizas.
 // Ejercicio 2: ¿Por qué da false al comparar con == dos objetos con los mismos datos?
-// Respuesta: ...
+// Respuesta: Porque son dos objetos distintos aunque tengan los mismos valores
 
 // Ejercicio 3: ¿Qué diferencia hay entre == y equals()? ¿Por qué ahora sí devuelve true?
-// Respuesta: ...
+// Respuesta: Porque == compara el objeto y equals el contenido
 
 // Ejercicio 4: ¿Por qué en Pelicula equals no funciona como en Cancion?
-// Respuesta: ...
+// Respuesta: Porque el contenido en pelicula si es el mismo en cambio en cancion no es el mismo
 
 // Ejercicio 5: ¿Qué ocurre cuando modificas el objeto a través de c6? ¿Qué demuestra?
-// Respuesta: ...
+// Respuesta: Que también se modifica c6 porque vale lo mismo que c5. 
 
 // Ejercicio 6: ¿Qué error aparece al acceder a un método de p3 siendo null?
 // ¿Qué significa realmente que una variable valga null?
-// Respuesta: ...
+// Respuesta: Que está vacia y que no vale nada.
     
