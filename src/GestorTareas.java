@@ -46,14 +46,14 @@ public class GestorTareas {
     }
 
     public static void conParametros(String usuario, int completadas) {
-        System.out.printf("Hola %s, completaste un total de %d tareas.", usuario, completadas );
+        System.out.printf("Hola %s, completaste un total de %d tareas. %n", usuario, completadas );
         
     }
 
     public static String planificacion(String tarea, int minutos) {
         int horas = minutos / 60;
         int hMinuto = minutos % 60;
-        String mensaje = " La tarea " + tarea + " durará aproximadamente " + horas + " horas" + " y " + hMinuto + " minutos.";
+        String mensaje = "La tarea " + tarea + " durará aproximadamente " + horas + " horas" + " y " + hMinuto + " minutos.";
         return mensaje;
 
     }
