@@ -40,6 +40,23 @@ public class GestorTareas {
         return completadas * 100 / totales;
     }
 
+    public static void sinParametros() {
+        System.out.println("Hola crack");
+        
+    }
+
+    public static void conParametros(String usuario, int completadas) {
+        System.out.printf("Hola %s, completaste un total de %d tareas.", usuario, completadas );
+        
+    }
+
+    public static String planificacion(String tarea, int minutos) {
+        int horas = minutos / 60;
+        int hMinuto = minutos % 60;
+        String mensaje = " La tarea " + tarea + " durará aproximadamente " + horas + " horas" + " y " + hMinuto + " minutos.";
+        return mensaje;
+
+    }
     public static void main(String[] args) {
 
         // ================================
@@ -119,7 +136,9 @@ public class GestorTareas {
         // Llama a ambos desde main.
 
         // Tu código aquí ↓
-
+        sinParametros();
+        conParametros("Patricia",6);
+        
         // ================================
         // EJERCICIO 8: Bonus - Planificación
         // ================================
@@ -127,8 +146,9 @@ public class GestorTareas {
         // y devuelva un texto con la planificación:
         // "La tarea [nombre] durará aproximadamente X horas y Y minutos."
         // Muestra el texto en pantalla.
-
         // Tu código aquí ↓
+     
+        System.out.println(planificacion("estudiar",130));
 
     }
 
