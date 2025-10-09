@@ -24,7 +24,7 @@ public class GestorTareas {
     }
 
     public static String estado(boolean completada){
-        String resultado = "nada";
+        String resultado = "";
         if (completada == true){
         resultado = "✅ Completada";
         }
@@ -36,6 +36,9 @@ public class GestorTareas {
 
     }
     
+    public static int productividad(int totales, int completadas){
+        return completadas * 100 / totales;
+    }
 
     public static void main(String[] args) {
 
@@ -103,6 +106,7 @@ public class GestorTareas {
         // Muestra el resultado en consola.
 
         // Tu código aquí ↓
+        System.out.println("Tienes un " + productividad(13,2) + "% de las tareas realizadas.");
 
         // ================================
         // EJERCICIO 7: Sobrecarga
